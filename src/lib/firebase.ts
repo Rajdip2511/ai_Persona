@@ -1,14 +1,16 @@
-import { initializeApp, getApps } from 'firebase/app';
-import { getAuth, browserLocalPersistence } from 'firebase/auth';
+import { FirebaseApp, initializeApp } from 'firebase/app';
+import { Auth, getAuth, browserLocalPersistence, AuthError } from 'firebase/auth';
+import { Analytics, getAnalytics } from 'firebase/analytics';
 import { firebaseConfig } from './firebaseConfig';
 
-// Initialize Firebase only if it hasn't been initialized already
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
-const auth = getAuth(app);
+// Initialize Firebase
+const app: FirebaseApp = initializeApp(firebaseConfig);
+const analytics: Analytics = getAnalytics(app);
+const auth: Auth = getAuth(app);
 
 // Add persistence to reduce auth token refresh issues
-auth.setPersistence(browserLocalPersistence).catch((error) => {
+auth.setPersistence(browserLocalPersistence).catch((error: AuthError) => {
   console.error('Error setting auth persistence:', error);
 });
 
-export { auth }; 
+export { auth, analytics }; 

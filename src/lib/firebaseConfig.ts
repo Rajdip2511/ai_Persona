@@ -1,10 +1,10 @@
 // Firebase configuration
 export const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyDkcZtgKHKwxyFry2RpIslEoAnpWuUWrzM",
+  authDomain: "ai-persona-mentor.firebaseapp.com",
+  projectId: "ai-persona-mentor",
+  storageBucket: "ai-persona-mentor.firebasestorage.app",
+  messagingSenderId: "617160220072",
+  appId: "1:617160220072:web:b08b1649898692f4fb919d",
+  measurementId: "G-GHFJMXHSYD"
 }; 

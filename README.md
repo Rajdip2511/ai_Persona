@@ -1,8 +1,32 @@
-# AugPersona v1.0.0
+# AugPersona v0.1.4
 
 A cutting-edge AI companion application that offers personalized chat experiences through multiple personas. Built with React, Firebase, and Mistral AI, featuring a sleek dark/light mode UI with glassmorphism effects.
 
 ![AugPersona Logo](/public/logo.svg)
+
+## 🎉 What's New in v0.1.4
+
+### Build & Performance Improvements
+- 🔧 Fixed platform compatibility issues for deployment
+- ⚡ Optimized bundle size with better chunk splitting
+- 🚀 Improved build configuration for production
+- 💪 Enhanced dependency management
+
+### Technical Updates
+- Removed platform-specific Rollup dependency
+- Updated to platform-agnostic Rollup v4.9.6
+- Optimized Vite configuration for better performance
+- Improved chunk management for vendor files
+- Enhanced build target configuration
+
+### Build Size Optimizations
+- Vendor chunks properly split:
+  - React vendor bundle
+  - Firebase vendor bundle
+  - UI components bundle
+  - General vendor bundle
+- Reduced initial load time
+- Better caching strategy
 
 ## 🌟 Key Features
 
@@ -44,7 +68,7 @@ A cutting-edge AI companion application that offers personalized chat experience
 
 1. **Clone the repository**
 ```bash
-git clone 
+git clone [repository URL]
 cd augpersona
 ```
 
@@ -98,21 +122,21 @@ npm run dev
 - **Frontend:**
   - React 18.2
   - TypeScript
-  - Vite
+  - Vite 5.0.8
   - Tailwind CSS
   - Framer Motion
   - Zustand (State Management)
 
 - **Backend Services:**
-  - Firebase Authentication
+  - Firebase 9.15.0
   - Mistral AI API
   - Firebase Security Rules
 
-- **UI Components:**
-  - Custom Glassmorphism Effects
-  - Responsive Design
-  - Animated Transitions
-  - Dark/Light Theme
+- **Build Tools:**
+  - Rollup 4.9.6
+  - TypeScript
+  - PostCSS
+  - Autoprefixer
 
 ## 🔒 Security Features
 
@@ -133,14 +157,31 @@ npm run dev
 
 ## 📝 Version History
 
-### v1.0.0 (Current)
-- Initial release
-- Three AI personas implementation
-- Firebase integration
-- Mistral AI integration
-- Modern UI with glassmorphism
-- Dark/Light mode
-- Responsive design
+### v0.1.4 (Current)
+- Fixed deployment platform compatibility
+- Optimized build configuration
+- Improved chunk splitting
+- Enhanced performance
+
+### v0.1.3
+- Added dark/light mode
+- Improved UI animations
+- Enhanced chat experience
+
+### v0.1.2
+- Implemented chat functionality
+- Added persona selection
+- Basic authentication
+
+### v0.1.1
+- Initial UI implementation
+- Firebase setup
+- Basic routing
+
+### v0.1.0
+- Project initialization
+- Basic setup
+- Core dependencies
 
 ## 📄 License
 
@@ -152,6 +193,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Firebase for authentication and backend services
 - React community for amazing tools and libraries
 - Open source contributors
+
+## 🤔 Support
+
+For support, email support@augpersona.com or join our Discord community.
 
 
 
